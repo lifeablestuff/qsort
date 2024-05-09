@@ -41,7 +41,8 @@ void printvec(const vector <int> &v, int a, int b){
 }
 
 void swap(vector <int> &v, int x, int y){
-    int temp(v[x]);
+    static int temp;
+    temp = v[x];
     v[x]=v[y];
     v[y]=temp;
 }
